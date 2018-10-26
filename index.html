@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>mixitup</title>
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/seminar.css">
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./assets/mixitup/mixitup.min.js"></script>
+<script src="./js/seminar.js"></script>
+
+
+<div id="wrap_main">
+	<div id="main">
+		<article class="content_area">
+			<div class="content_inner">
+
+				<section class="seminar_skeg clearfix" id="seminar_skeg">
+
+					<div class="sarch_area">
+						<h3 class="tit_sarch">絞込み検索<span>（1つ選択してください）</span></h3>
+
+						<!--************** PC専用スイッチ　start **************-->
+					   	<div class="controls spNone">
+							<div class="search_waku">
+							<!-- ジャンルで選ぶ　start -->
+								<div class="se_genre">
+									<h4>ジャンルで選ぶ：</h4>
+									<ul>
+										<li><a href="javascript:void(0);" class="control" data-filter=".beginner">初心</a></li>
+										<li><a href="javascript:void(0);" class="control" data-filter=".bank">銀行融資</a></li>
+										<li><a href="javascript:void(0);" class="control" data-filter=".apart">アパート</a></li>
+										<li><a href="javascript:void(0);" class="control" data-filter=".newconstruction">新築中古</a></li>
+									</ul>
+								</div><!-- / .se_genre -->
+							<!-- ジャンルで選ぶ　end -->
+
+							<!-- 会場で選ぶ　start -->
+								<div class="se_place">
+									<h4>会場で選ぶ：</h4>
+									<ul>
+						            	<li><a href="javascript:void(0);" class="control" data-filter=".shinjuku">新宿</a></li>
+						            	<li><a href="javascript:void(0);" class="control" data-filter=".shinagawa">品川</a></li>
+						            	<!-- <li><a href="javascript:void(0);" class="control" data-filter=".yokohama">横浜</a></li> -->
+						            	<!-- <li><a href="javascript:void(0);" class="control" data-filter=".nagoya">名古屋</a></li> -->
+									</ul>
+								</div><!-- / .se_genre -->
+							<!-- 会場で選ぶ　end -->
+
+							<!-- 開催月で選ぶ　start -->
+								<div class="se_date">
+									<h4>開催月で選ぶ：</h4>
+									<ul>
+										<!-- <li><a href="javascript:void(0);" class="control" data-filter=".ym2017_12">12月</a></li> -->
+										<li><a href="javascript:void(0);" class="control" data-filter=".ym2018_01">01月</a></li>
+										<li><a href="javascript:void(0);" class="control" data-filter=".ym2018_02">02月</a></li>
+										<!-- <li><a href="javascript:void(0);" class="control" data-filter=".ym2018_03">03月</a></li> -->
+									</ul>
+								</div><!-- / .se_genre -->
+							<!-- 開催月で選ぶ　end -->
+								<p class="all_seminar"><a href="javascript:void(0);" class="control" data-filter="all">全てのセミナーを表示する</a></p>
+							</div><!-- / .search_waku -->
+
+      					 </div><!-- / .controls spNone --> 
+						<!--************** PC専用スイッチ　end **************-->
+
+						<!--************** SP専用スイッチ　start **************-->
+				        <div class="controls pcNone">
+							<div class="search_waku">
+							<!-- ジャンルで選ぶsp版　start -->
+								<div class="sel_sp_genre">
+									<h5>ジャンルで選ぶ</h5>
+						            <select class="select-filter">
+						                <option value="">ジャンルを選択</option>
+						                <option value=".beginner">初心</option>
+						                <option value=".bank">銀行融資</option>
+						                <option value=".apart">アパート</option>
+						                <option value=".newconstruction">新築中古</option>
+									</select>
+						        </div><!-- / .se_genre  -->
+							<!-- ジャンルで選ぶsp版　end -->
+
+							<!-- 会場で選ぶsp版　start -->
+								<div class="sel_sp_place">
+									<h5>会場で選ぶ</h5>
+						            <select class="select-filter2">
+						                <option value="">会場を選択</option>
+						                <option value=".shinjuku">新宿</option>
+						                <option value=".shinagawa">品川</option>
+						                <!-- <option value=".yokohama">横浜</option> -->
+						                <!-- <option value=".nagoya">名古屋</option> -->
+						            </select>
+						        </div><!-- / .se_genre  -->
+							<!-- 会場で選ぶsp版　end -->
+
+							<!-- 開催月で選ぶsp版　start -->
+								<div class="sel_sp_place">
+									<h5>開催月で選ぶ</h5>
+						            <select class="select-filter3">
+						                <option value="">開催月を選択</option>
+						                <!-- <option value=".ym2017_12">12月</option> -->
+						                <option value=".ym2018_01">01月</option>
+						                <option value=".ym2018_02">02月</option>
+						                <!-- <option value=".ym2018_03">03月</option> -->
+						                <!-- <option value=".ym2018_04">04月</option> -->
+						            </select>
+						        </div><!-- / .se_genre  -->
+							<!-- 開催月で選ぶsp版　end -->
+							<p class="all_seminar"><a href="javascript:void(0);" class="control" data-filter="all">全てのセミナーを表示する</a></p>
+
+				        	</div><!-- / .search_waku -->
+						<!--************** SP専用スイッチ　end **************-->
+						</div><!-- / .controls pcNone --> 
+					</div><!-- / .sarch_area --> 
+
+
+					<ul class="container">
+						
+						<li class="mix shinjuku ym2018_01 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/1801-15-21.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>初心</div>
+								<div class="kaisai_date">1/15(月)～21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 bank"><a href="https://vertex-c.co.jp/seminar/teiki-bank/1801-15-21.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_03.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>銀行融資</div>
+								<div class="kaisai_date">1/15(月)～21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 apart"><a href="https://vertex-c.co.jp/seminar/teiki-nenkan1801/15-21.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_02.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>アパート</div>
+								<div class="kaisai_date">1/15(月)～21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 newconstruction"><a href="https://vertex-c.co.jp/seminar/teiki-newold1801/15-21.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_09.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>新築中古</div>
+								<div class="kaisai_date">1/15(月)～21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinagawa ym2018_01 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/shina1801.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01shina.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span class="shina">品川開催</span>初心</div>
+								<div class="kaisai_date">1/21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinagawa ym2018_01 bank"><a href="https://vertex-c.co.jp/seminar/teiki-bank/shina1801.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_03shina.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span class="shina">品川開催</span>銀行融資</div>
+								<div class="kaisai_date">1/21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinagawa ym2018_01 apart"><a href="https://vertex-c.co.jp/seminar/teiki-nenkan1801shina/?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_02shina.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span class="shina">品川開催</span>アパート</div>
+								<div class="kaisai_date">1/21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinagawa ym2018_01 newconstruction"><a href="https://vertex-c.co.jp/seminar/teiki-newold1801shina/?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_09shina.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span class="shina">品川開催</span>新築中古</div>
+								<div class="kaisai_date">1/21(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+
+						<li class="mix shinjuku ym2018_01 ym2018_02 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/1801-29-04.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>初心</div>
+								<div class="kaisai_date">1/29(月)～2/4(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 ym2018_02 bank"><a href="https://vertex-c.co.jp/seminar/teiki-bank/1801-29-04.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_03.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>銀行融資</div>
+								<div class="kaisai_date">1/29(月)～2/4(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 ym2018_02 apart"><a href="https://vertex-c.co.jp/seminar/teiki-nenkan1801/29-04.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_02.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>アパート</div>
+								<div class="kaisai_date">1/29(月)～2/4(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_01 ym2018_02 newconstruction"><a href="https://vertex-c.co.jp/seminar/teiki-newold1801/29-04.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_09.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>新築中古</div>
+								<div class="kaisai_date">1/29(月)～2/4(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+
+						<li class="mix shinagawa ym2018_02 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/shina1802.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01shina.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span class="shina">品川開催</span>初心</div>
+								<div class="kaisai_date">2/3(土)、4(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+
+						<li class="mix shinjuku ym2018_02 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/1802-05-12.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>初心</div>
+								<div class="kaisai_date">2/5(月)～12(祝)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_02 bank"><a href="https://vertex-c.co.jp/seminar/teiki-bank/1802-05-12.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_03.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>銀行融資</div>
+								<div class="kaisai_date">2/5(月)～12(祝)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_02 apart"><a href="https://vertex-c.co.jp/seminar/teiki-nenkan1802/05-12.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_02.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>アパート</div>
+								<div class="kaisai_date">2/5(月)～12(祝)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+
+						<li class="mix shinjuku ym2018_02 beginner"><a href="https://vertex-c.co.jp/seminar/teiki-beginner/1802-12-18.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_01.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>初心</div>
+								<div class="kaisai_date">2/12(祝)～18(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_02 bank"><a href="https://vertex-c.co.jp/seminar/teiki-bank/1802-12-18.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_03.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>銀行融資</div>
+								<div class="kaisai_date">2/12(祝)～18(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_02 apart"><a href="https://vertex-c.co.jp/seminar/teiki-nenkan1802/12-18.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_02.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>アパート</div>
+								<div class="kaisai_date">2/12(祝)～18(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+						<li class="mix shinjuku ym2018_02 newconstruction"><a href="https://vertex-c.co.jp/seminar/teiki-newold1802/12-18.html?ad=cpo" target="_blank">
+							<div class="pict"><img src="./img/seminar/seminar_icon_09.png" alt=""></div>
+							<div class="kaisai_wrap">
+								<div class="kaisai_area"><span>新宿開催</span>新築中古</div>
+								<div class="kaisai_date">2/12(祝)～18(日)</div>
+								<div class="kaisai_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+							</div>
+							<!-- / .kaisai_wrap --> 
+							</a> </li>
+
+					</ul>
+				</section>
+			</div>
+
+		</article>
+
+	</div>
+	<!-- /main --> 
+</div>
+<!-- /wrap_main --> 
+
+</body>
+</html>

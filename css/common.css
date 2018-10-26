@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*************************************
+ 	Reset
+*************************************/
+html { overflow-y: scroll; font-size: 62.5%; }
+body {
+	margin: 0;
+	padding: 0;
+}
+/*
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
+ol, ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+ol, ul { list-style: none; }
+fieldset, img { border: 0; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@-ms-viewport{width:device-width;}
+
+/*************************************
+ 	Parts
+*************************************/
+.clearfix:after { /*floatの解除、ここがポイント*/
+	display: block;
+	clear: both;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	visibility: hidden;
+	content: ".";
+}
+.clearfix { min-height: 1px; /*IE6、7対策*/ }
+* html .clearfix {
+	height: 1px;
+	/*\*//*/ /*MAC IE5.x対策*/
+	height: auto;
+	overflow: hidden;/**/
+}
+/** リンク　**/
+a {
+	cursor: pointer;
+	color:#222222;
+	text-decoration:none;
+	transition: all .4s;
+	-webkit-transition: all .4s;
+}
+
+a:hover {
+	color:#ef4a51;
+}
+
+a.act {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+a.act:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+a img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	transition: all .4s;
+}
+a img:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.blink a{ text-decoration:underline;}
+
+/*イメージ（画像）を中央に表示*/
+.center_ds {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*表示非表示*/
+.pcNone{ display: none;}
+.spNone{ display: block;}
+
+@media screen and (max-width: 640px) {
+.pcNone{ display: block;}
+.spNone{ display: none;}
+.seminar{font-size:2rem;}
+}
+
+hr.none{ border: 1px solid transparent; }
+/*************************************
+ 	Layout
+*************************************/
+body {
+	font-size:1.4rem;
+	line-height:2.7rem;
+	font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color: #000000;
+	letter-spacing: 0.18em;
+}
+
+
+#wrap {
+	position:relative;
+	z-index:0;
+	margin:0 auto;
+	text-align:center;
+}
+

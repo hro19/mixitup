@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+
+.content_area {
+	margin: 100px auto 80px;
+}
+
+.content_inner {
+	width: 1070px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+@media screen and (max-width: 640px) {
+
+	.content_area {
+		margin: 30px 0px;
+	}
+
+	.content_inner {
+		width: calc(100% - 6%);
+		margin: 0 3%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+}
+/*************************************
+ 	seminar
+*************************************/
+
+/*** セミナー情報 ***/
+.seminar_skeg ul.container {
+	margin-left: -14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.seminar_skeg ul.container li {
+	width: 32%;
+	min-height: 387px;
+	margin-left: 14px;
+	margin-bottom: 70px;
+}
+.seminar_skeg ul.container li .pict {
+	width: 100%;
+	background: #F0F0F0;
+	padding: 30px 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.seminar_skeg ul.container li .kaisai_wrap {
+	padding: 0 10px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.seminar_skeg ul.container li .kaisai_area {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #ef4a51;
+	margin-bottom: 10px;
+}
+/* 新宿開催 */
+
+.seminar_skeg ul.container li .kaisai_area span {
+	font-size: 1.6rem;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	color: #fff;
+	background: #ef4a51;
+	padding: 4px 10px;
+	margin-right: 15px;
+}
+/* 横浜開催 */
+
+.seminar_skeg ul.container li .kaisai_area .yo {
+	background: #4a9fef;
+}
+/* 名古屋開催 */
+
+.seminar_skeg ul.container li .kaisai_area .na {
+	background: #efca4a;
+}
+/* 品川開催 */
+
+.seminar_skeg ul.container li .kaisai_area .shina {
+	background: #16c00e;
+}
+.seminar_skeg ul.container li .kaisai_date {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 640px) {
+	.seminar_skeg ul.container li {
+		min-height: auto;
+	}
+	.seminar_skeg ul.container li .kaisai_wrap {
+		padding: 0px;
+		letter-spacing: 0.1em;
+	}
+	.seminar_skeg ul.container li .kaisai_area, .seminar_skeg ul.container li .kaisai_area .yo, /* 新宿開催 */
+	.seminar_skeg ul.container li .kaisai_area .na, /* 名古屋開催 */
+	.seminar_skeg ul.container li .kaisai_area .shina {
+		/* 品川開催 */
+	}
+	.seminar_skeg ul.container li .kaisai_area span {
+		display: block;
+		margin-right: 0px;
+		margin-bottom: 5px;
+		padding: 8px 20px;
+	}
+	.seminar_skeg ul.container li .kaisai_date {
+	}
+	.seminar_skeg ul.container li .kaisai_text {
+		/*font-size:2.4rem;*/
+	}
+	.seminar_skeg ul.container {
+		margin-right: 0px;
+		margin-left: -2%;
+	}
+	.seminar_skeg ul.container li {
+		width: 48.0%;
+		margin: 0 0% 50px 2%;
+		padding: 0 0 30px;
+		border-bottom: 1px dotted #999;
+	}
+	.seminar_skeg ul.container li:nth-child(2n) {
+		/*margin: 0 1% 50px 1%;*/
+	}
+	.seminar_skeg ul.container li:nth-child(1), .seminar_skeg ul.container li:nth-child(2) {
+		/*border-top: 1px dotted #999;*/
+		/*padding-top: 40px;*/
+	}
+}
+
+/*イベントが無いときのメッセージ*/
+.no_event_message {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 2.5rem;
+}
+/*選択エリアPC版*/
+
+.sarch_area {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+	text-align: left;
+	letter-spacing: normal;
+}
+.sarch_area .tit_sarch {
+	margin-bottom: 5px;
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+.sarch_area .tit_sarch span {
+	font-weight: normal;
+}
+.sarch_area .tit_sarch::before {
+	display: inline-block;
+	content: " ";
+	width: 15px;
+	height: 15px;
+	background-color: #fe4a51;
+	margin-right: 15px;
+}
+.search_waku {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border: 1px solid #ccc;
+}
+.search_waku div[class^="se_"] {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 20px 15px 20px 25px;
+}
+.search_waku .se_genre {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+.search_waku .se_date {
+	border-left: 1px dotted #aaa;
+}
+.search_waku .se_place, .search_waku .se_date {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	background-color: #EAEAEA;
+}
+.search_waku .se_date ul {
+	display: inline-block;
+}
+.search_waku div[class^="se_"]>h4 {
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+.search_waku .se_genre>h4 {
+	width: 160px;
+}
+.search_waku .se_place>h4 {
+	width: 130px;
+}
+.search_waku .se_date>h4 {
+	width: 148px;
+}
+.search_waku div[class^="se_"] ul li {
+	display: inline-block;
+	margin: 3px 1px 3px 0;
+}
+.search_waku div[class^="se_"] ul>li>a {
+	padding: 5px 10px;
+	background-color: #666666;
+	color: #fff;
+	font-weight: bold;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+.search_waku div[class^="se_"] ul>li>a.mixitup-control-active {
+	background-color: #F74656;
+}
+
+.search_waku .all_seminar{
+	margin:13px auto;
+}
+
+.search_waku .all_seminar a{
+	padding: 5px 13px;
+	background-color: #F74656;
+	color: #fff;
+	font-weight: bold;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	text-align: center;
+}
+
+
+/*選択エリアSP版*/
+
+@media screen and (max-width: 640px) {
+	.search_waku {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		border: 1px solid #ccc;
+		padding: 30px 2.5% 30px 4%;
+		margin-bottom: 20px;
+	}
+	.sarch_area .tit_sarch {
+		font-size: 1.4rem;
+	}
+	.sarch_area .tit_sarch span {
+		/*display: none;*/
+	}
+	.search_waku div[class^="sel_sp_"] {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.search_waku div[class^="sel_sp_"]:last-child {
+		margin-bottom: 0px;
+	}
+	.search_waku div[class^="sel_sp_"] h5 {
+		width: 32%;
+		font-weight: bold;
+	}
+	.search_waku div[class^="sel_sp_"] select {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+		background: url(../img/seminar/select_arrow.png) right 3% bottom 50% no-repeat;
+		background-color: #efefef;
+	    position: relative;
+		width: calc(100% - 32%);
+		display: block;
+		border: 1px solid #aaa;
+		border-radius: 4px;
+		padding: 3px 8px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: 1.4rem;
+		line-height: 4.4rem;
+	}
+
+	.search_waku div[class^="sel_sp_"] option{
+		background: #fff;
+	}
+
+	.search_waku .all_seminar{
+		width: 80%;
+		margin:20px auto;	
+	}
+
+	.search_waku .all_seminar a{
+		display: block;
+		padding: 18px 10px;
+		background-color: #F74656;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	.seminar_skeg ul.container li .kaisai_date{
+		margin-bottom: 0;
+	}
+
+	.seminar_skeg ul.container li .kaisai_text{
+		display: none;
+	}
+}

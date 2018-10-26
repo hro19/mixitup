@@ -1,0 +1,26 @@
+
+
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    position: relative;
+}
+
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+.mix,
+.gap {
+    width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+}
+
+@media screen and (max-width: 640px) {
+    .mix,
+    .gap {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+}
