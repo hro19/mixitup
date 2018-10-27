@@ -293,7 +293,7 @@
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
 	    appearance: none;
-		background: url(../img/seminar/select_arrow.png) right 3% bottom 50% no-repeat;
+		background: url(../img/select_arrow.png) right 3% bottom 50% no-repeat;
 		background-color: #efefef;
 	    position: relative;
 		width: calc(100% - 32%);
